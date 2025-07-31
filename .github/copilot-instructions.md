@@ -2,6 +2,10 @@
 
 # IoT Sensor Project Instructions
 
+**Created by: BeGoodAde**  
+**GitHub: https://github.com/BeGoodAde/IoT-Hub**  
+**Project Author: BeGoodAde (bolarinwalaja@gmail.com)**
+
 This is an IoT sensor project for offline computer communication. The project includes:
 
 ## Project Structure
@@ -60,3 +64,13 @@ This is an IoT sensor project for offline computer communication. The project in
 - Consider Docker containerization
 - Environment variables for configuration
 - Auto-discovery for IoT devices
+
+---
+
+## Project Credits
+**Developed by**: BeGoodAde  
+**Contact**: bolarinwalaja@gmail.com  
+**Repository**: https://github.com/BeGoodAde/IoT-Hub  
+**License**: ISC License  
+
+*This IoT Sensor Hub project was created to demonstrate real-time sensor monitoring with WebSocket communication for offline computer networks.*
