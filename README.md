@@ -1,12 +1,12 @@
 # 🌐 IoT Sensor Hub
 
-A real-time IoT sensor monitoring system for offline computer communication. Monitor temperature, humidity, motion, and light levels through a beautiful web dashboard with WebSocket connectivity.
+A real-time IoT sensor monitoring system for offline computer communication. Monitor temperature, humidity, pressure, air quality, sound, motion, and light levels through a beautiful web dashboard with WebSocket connectivity.
 
 ## ✨ Features
 
 - **Real-time Dashboard** - Live sensor data visualization
 - **WebSocket Communication** - Instant data updates
-- **Multiple Sensors** - Temperature, humidity, motion, light
+- **7 Sensor Types** - Temperature, humidity, pressure, air quality, sound, motion, light
 - **Device Control** - Send commands to IoT devices
 - **Offline Operation** - Works on local network without internet
 - **Responsive Design** - Mobile-friendly interface
@@ -41,7 +41,10 @@ A real-time IoT sensor monitoring system for offline computer communication. Mon
 ### Sensor Monitoring
 - **🌡️ Temperature** - Real-time temperature readings
 - **💧 Humidity** - Humidity percentage monitoring  
-- **👁️ Motion** - Motion detection alerts
+- **� Pressure** - Atmospheric pressure measurement
+- **🌬️ Air Quality** - Air quality index monitoring
+- **🔊 Sound** - Sound level detection
+- **�👁️ Motion** - Motion detection alerts
 - **💡 Light** - Ambient light level measurement
 
 ### Controls
@@ -118,6 +121,9 @@ iot-sensor-hub/
 ├── sensors/
 │   ├── temperature.js      # Temperature sensor module
 │   ├── humidity.js         # Humidity sensor module
+│   ├── pressure.js         # Pressure sensor module
+│   ├── airquality.js       # Air quality sensor module
+│   ├── sound.js            # Sound sensor module
 │   ├── motion.js           # Motion sensor module
 │   └── light.js            # Light sensor module
 ├── .github/
@@ -178,7 +184,7 @@ CMD ["npm", "start"]
 2. Follow the standard format:
    ```javascript
    class NewSensor {
-     read() {
+     async readValue() {
        return {
          value: sensorValue,
          unit: 'unit',
